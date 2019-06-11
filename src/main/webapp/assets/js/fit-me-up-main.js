@@ -2,11 +2,13 @@ jQuery(function ($) {
 
     'use strict';
 
-    // -------------------------------------------------------------
-    // Animated scrolling / Scroll Up
-    // -------------------------------------------------------------
-    
     (function () {
+        var galleryIsLoaded = false;
+
+        // -------------------------------------------------------------
+        // smoothscroll.js
+        // Animated scrolling / Scroll Up
+        // -------------------------------------------------------------
         $('a[href*=\\#]').bind("click", function(e) {
             if (e.currentTarget.className !== 'nav-link') {
                 return;
@@ -17,6 +19,24 @@ jQuery(function ($) {
             }, 1000);
             e.preventDefault();
         });
+
+        // -------------------------------------------------------------
+        // Load gallery when #gallery section is visible on screen
+        // -------------------------------------------------------------
+        $(window).scroll(function() {
+            if(!galleryIsLoaded && isOnScreen($('#gallery'))) {
+                $('#gallery').load("gallery.html");
+                galleryIsLoaded = true;
+            }
+        });
+
+        function isOnScreen(element) {
+            var curPos = element.offset();
+            var curTop = curPos.top - $(window).scrollTop();
+            var screenHeight = $(window).height();
+            return (curTop > screenHeight) ? false : true;
+        }
+
     }());
 
 });
