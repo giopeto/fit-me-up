@@ -30,7 +30,8 @@
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 	<!-- CSS Files -->
-	<link href="./theme/material-kit-html-v2.0.4/assets/css/material-kit.css?v=2.0.4" rel="stylesheet" />
+	<link rel="stylesheet" href="./theme/material-kit-html-v2.0.4/assets/css/material-kit.css?v=2.0.4" />
+	<link rel="stylesheet" href="./assets/css/fit-me-up-styles.css" />
 	<script type="application/ld+json">
 		{
 			"@context": "http://schema.org",
@@ -125,9 +126,9 @@
 			<div class="row">
 				<div class="col-md-6">
 					<h1 class="title">Fit me up</h1>
-					<h3>
+					<h2>
 						Фитнес изцяло за жени
-					</h3>
+					</h2>
 					<br>
 				</div>
 			</div>
@@ -142,15 +143,15 @@
 				<section id="about-us">
 					<div class="row">
 						<div class="col-md-8 ml-auto mr-auto">
-							<h1 class="title">За нас</h1>
-							<h5 class="description">Fit Me Up е фитнес, създаден изцяло за жени. Тренировките, които предлагаме са с персонален треньор и са съобразени с индивидуалните нужди и цели на всяка жена.</h5>
+							<h2 class="title">За нас</h2>
+							<h3 class="description">Fit Me Up е фитнес, създаден изцяло за жени. Тренировките, които предлагаме са с персонален треньор и са съобразени с индивидуалните нужди и цели на всяка жена.</h3>
 						</div>
 					</div>
 				</section>
 
 				<!-- Trainings -->
 				<section id="trainings">
-					<h1 class="title">Тренировки</h1>
+					<h2 class="title">Тренировки</h2>
 					<div class="row">
 						<div class="col-md-6 ml-auto mr-auto">
 							<h3 class="title">Кондиционна тренировка</h3>
@@ -184,7 +185,7 @@
 									<p class="card-description">
 										Упражнения като клекове и лицеви опори стават много по-лесни, а специалният ластик елиминира натоварването на ставите.
 									</p>
-									<br /><br />
+									<br />
 								</div>
 							</div>
 						</div>
@@ -213,6 +214,71 @@
 								</div>
 							</div>
 						</div>
+
+						<div class="col-md-6 ml-auto mr-auto">
+							<h3 class="title">Групови тренировки</h3>
+
+							<h4 class="title">Пилатес</h4>
+							<div class="card card-blog">
+								<div class="card-header card-header-image">
+									<img class="img" src="./assets/img/pilates_training_img.jpg">
+								</div>
+								<div class="card-body">
+									<p class="card-description">
+										Тренировките се провеждат всеки вторник - 19:00ч, четвъртък от 20:00ч и събота от 9:00ч
+									</p>
+									<br />
+								</div>
+							</div>
+
+							<h4 class="title">Stretching</h4>
+							<div class="card card-blog">
+								<div class="card-header card-header-image">
+									<img class="img" src="./assets/img/stretch_training_img.jpg">
+								</div>
+								<div class="card-body">
+									<p class="card-description">
+										Тренировките се провеждат всеки вторник от 8:30ч и събота от 13:00ч
+									</p>
+									<br />
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Gallery -->
+				<section id="gallery-placeholder">
+					<div class="row">
+						<div class="col-md-12 ml-auto mr-auto">
+							<h2 class="title">Галерия</h2>
+							<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+									<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+								</ol>
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="./assets/img/slide-0-img.jpg" alt="Image slide" />
+									</div>
+								</div>
+								<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+						</div>
 					</div>
 				</section>
 
@@ -221,7 +287,7 @@
 
 				<!-- Price -->
 				<section id="prices">
-					<h1 class="title">Цени</h1>
+					<h2 class="title">Цени</h2>
 
 					<div>
 						<h3 class="info-title">Фитнес и Power Plate тренировки</h3>
@@ -492,25 +558,35 @@
 
 				<!-- Contacts -->
 				<section id="contacts">
-					<h1 class="title">Контакти</h1>
+					<h2 class="title">Контакти</h2>
 					<div class="row">
-						<div class="col-md-6 ml-auto mr-auto">
+						<div class="col-md-4 ml-auto mr-auto">
+							<div class="info">
+								<div class="icon icon-success">
+									<i class="material-icons">timer</i>
+								</div>
+								<h3 class="info-title">Работно време</h3>
+								<h4>Понеделник до петък 7:00 - 20:00ч</h4>
+								<h4>Събота 09:00 - 14:00ч</h4>
+							</div>
+						</div>
+						<div class="col-md-4 ml-auto mr-auto">
 							<div class="info">
 								<div class="icon icon-success">
 									<i class="material-icons">phone</i>
 								</div>
-								<h4 class="info-title">Телефон за връзка</h4>
-								<h5>Катрин Димитрова</h5>
-								<h5>0877 617 646</h5>
+								<h3 class="info-title">Телефон за връзка</h3>
+								<h4>Катрин Димитрова</h4>
+								<h4>0877 617 646</h4>
 							</div>
 						</div>
-						<div class="col-md-6 ml-auto mr-auto">
+						<div class="col-md-4 ml-auto mr-auto">
 							<div class="info">
 								<div class="icon icon-success">
 									<i class="material-icons">place</i>
 								</div>
-								<h4 class="info-title">Адрес</h4>
-								<h5>София, България, ул.Голаш 28 Б</h5>
+								<h3 class="info-title">Адрес</h3>
+								<h4>София, България, ул.Голаш 28 Б</h4>
 								<a href="https://www.google.bg/maps/place/Fit+Me+Up+Fitness/@42.6892247,23.3525647,17z/data=!3m1!4b1!4m5!3m4!1s0x40aa852d0d172355:0x4adcc083136800e5!8m2!3d42.6892247!4d23.3547534" class="btn btn-success" target="_blank">Виж на картата</a>
 							</div>
 						</div>

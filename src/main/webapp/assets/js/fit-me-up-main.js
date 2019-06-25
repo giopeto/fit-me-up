@@ -24,7 +24,8 @@ jQuery(function ($) {
         // Load gallery when #gallery section is visible on screen
         // -------------------------------------------------------------
         $(window).scroll(function() {
-            if(!galleryIsLoaded && isOnScreen($('#gallery'))) {
+            if(!galleryIsLoaded && isOnScreen($('#trainings'))) {
+                $('#gallery-placeholder').remove();
                 $('#gallery').load("gallery.html");
                 galleryIsLoaded = true;
             }
